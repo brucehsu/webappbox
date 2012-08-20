@@ -15,4 +15,12 @@
     [[webview mainFrame] loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
+-(IBAction) alwaysOnTopAction:(id)sender {
+    if([window level]==NSFloatingWindowLevel) {
+        [window setLevel:NSNormalWindowLevel];
+    } else {
+        [window setLevel:NSFloatingWindowLevel];
+    }
+}
+
 @end

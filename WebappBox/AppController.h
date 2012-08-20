@@ -17,5 +17,6 @@
 }
 
 -(IBAction) urlAction:(id)sender;
+-(IBAction) alwaysOnTopAction:(id)sender;
 
 @end

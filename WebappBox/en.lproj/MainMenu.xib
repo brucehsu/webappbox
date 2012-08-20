@@ -107,7 +107,7 @@
 								<int key="NSvFlags">268</int>
 								<string key="NSFrame">{{0, 14}, {662, 22}}</string>
 								<reference key="NSSuperview"/>
-								<reference key="NSNextKeyView"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="NSEnabled">YES</bool>
 								<object class="NSTextFieldCell" key="NSCell" id="564174034">
@@ -238,8 +238,8 @@
 						<reference ref="855617931"/>
 						<reference ref="1032771130"/>
 						<reference ref="830850558"/>
-						<reference ref="334448342"/>
 						<reference ref="546977895"/>
+						<reference ref="334448342"/>
 					</array>
 					<array key="NSToolbarIBDefaultItems">
 						<reference ref="334448342"/>
@@ -344,6 +344,14 @@
 						<reference key="destination" ref="716170643"/>
 					</object>
 					<int key="connectionID">636</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">alwaysOnTopAction:</string>
+						<reference key="source" ref="950592112"/>
+						<reference key="destination" ref="830850558"/>
+					</object>
+					<int key="connectionID">637</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -522,6 +530,16 @@
 						<reference key="parent" ref="48050356"/>
 					</object>
 					<object class="IBObjectRecord">
+						<int key="objectID">631</int>
+						<reference key="object" ref="546977895"/>
+						<reference key="parent" ref="48050356"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">632</int>
+						<reference key="object" ref="950592112"/>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
 						<int key="objectID">630</int>
 						<reference key="object" ref="334448342"/>
 						<array class="NSMutableArray" key="children">
@@ -541,16 +559,6 @@
 						<int key="objectID">629</int>
 						<reference key="object" ref="564174034"/>
 						<reference key="parent" ref="1037605471"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">631</int>
-						<reference key="object" ref="546977895"/>
-						<reference key="parent" ref="48050356"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">632</int>
-						<reference key="object" ref="950592112"/>
-						<reference key="parent" ref="0"/>
 					</object>
 				</array>
 			</object>
@@ -591,24 +599,27 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">636</int>
+			<int key="maxID">637</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">AppController</string>
 					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">urlAction:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">urlAction:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="alwaysOnTopAction:">id</string>
+						<string key="urlAction:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="alwaysOnTopAction:">
+							<string key="name">alwaysOnTopAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="urlAction:">
 							<string key="name">urlAction:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="url">NSTextField</string>
 						<string key="webview">WebView</string>
