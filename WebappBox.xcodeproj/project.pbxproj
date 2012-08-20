@@ -18,6 +18,7 @@
 		18BF972715E25EC600F9DF22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18BF972515E25EC600F9DF22 /* InfoPlist.strings */; };
 		18BF972A15E25EC600F9DF22 /* WebappBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF972915E25EC600F9DF22 /* WebappBoxTests.m */; };
 		18BF973415E261D700F9DF22 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BF973315E261D700F9DF22 /* WebKit.framework */; };
+		18BF973715E26D1B00F9DF22 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF973615E26D1B00F9DF22 /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18BF972815E25EC600F9DF22 /* WebappBoxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebappBoxTests.h; sourceTree = "<group>"; };
 		18BF972915E25EC600F9DF22 /* WebappBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebappBoxTests.m; sourceTree = "<group>"; };
 		18BF973315E261D700F9DF22 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		18BF973515E26D1B00F9DF22 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		18BF973615E26D1B00F9DF22 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				18BF971115E25EC600F9DF22 /* AppDelegate.h */,
 				18BF971215E25EC600F9DF22 /* AppDelegate.m */,
 				18BF971415E25EC600F9DF22 /* MainMenu.xib */,
+				18BF973515E26D1B00F9DF22 /* AppController.h */,
+				18BF973615E26D1B00F9DF22 /* AppController.m */,
 				18BF970615E25EC500F9DF22 /* Supporting Files */,
 			);
 			path = WebappBox;
@@ -267,6 +272,7 @@
 			files = (
 				18BF970C15E25EC500F9DF22 /* main.m in Sources */,
 				18BF971315E25EC600F9DF22 /* AppDelegate.m in Sources */,
+				18BF973715E26D1B00F9DF22 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
