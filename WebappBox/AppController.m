@@ -18,12 +18,19 @@
 -(IBAction) alwaysOnTopAction:(id)sender {
     if([window level]==NSFloatingWindowLevel) {
         [window setLevel:NSNormalWindowLevel];
+        [sender setLabel:@"Always on Top"];
     } else {
         [window setLevel:NSFloatingWindowLevel];
+        [sender setLabel:@"Back to Normal"];
     }
 }
 
 -(IBAction)lockResizeAction:(id)sender {
+    if([window styleMask]&NSResizableWindowMask) {
+        [sender setLabel:@"Unlock Size"];
+    } else {
+        [sender setLabel:@"Lock Size"];
+    }
     [window setStyleMask:[window styleMask]^NSResizableWindowMask];
     [window update];
 }
