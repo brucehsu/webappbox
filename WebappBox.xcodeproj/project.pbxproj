@@ -17,6 +17,7 @@
 		18BF971F15E25EC600F9DF22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BF96FF15E25EC500F9DF22 /* Cocoa.framework */; };
 		18BF972715E25EC600F9DF22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18BF972515E25EC600F9DF22 /* InfoPlist.strings */; };
 		18BF972A15E25EC600F9DF22 /* WebappBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF972915E25EC600F9DF22 /* WebappBoxTests.m */; };
+		18BF973415E261D700F9DF22 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BF973315E261D700F9DF22 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18BF972615E25EC600F9DF22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18BF972815E25EC600F9DF22 /* WebappBoxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebappBoxTests.h; sourceTree = "<group>"; };
 		18BF972915E25EC600F9DF22 /* WebappBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebappBoxTests.m; sourceTree = "<group>"; };
+		18BF973315E261D700F9DF22 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BF973415E261D700F9DF22 /* WebKit.framework in Frameworks */,
 				18BF970015E25EC500F9DF22 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +78,7 @@
 		18BF96F015E25EC500F9DF22 = {
 			isa = PBXGroup;
 			children = (
+				18BF973315E261D700F9DF22 /* WebKit.framework */,
 				18BF970515E25EC500F9DF22 /* WebappBox */,
 				18BF972215E25EC600F9DF22 /* WebappBoxTests */,
 				18BF96FE15E25EC500F9DF22 /* Frameworks */,
@@ -342,7 +346,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -364,7 +368,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -376,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebappBox/WebappBox-Prefix.pch";
 				INFOPLIST_FILE = "WebappBox/WebappBox-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebappBox/WebappBox-Prefix.pch";
 				INFOPLIST_FILE = "WebappBox/WebappBox-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
