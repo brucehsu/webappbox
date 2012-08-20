@@ -18,5 +18,6 @@
 
 -(IBAction) urlAction:(id)sender;
 -(IBAction) alwaysOnTopAction:(id)sender;
+-(IBAction) lockResizeAction:(id)sender;
 
 @end

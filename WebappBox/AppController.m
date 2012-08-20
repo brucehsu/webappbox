@@ -23,4 +23,9 @@
     }
 }
 
+-(IBAction)lockResizeAction:(id)sender {
+    [window setStyleMask:[window styleMask]^NSResizableWindowMask];
+    [window update];
+}
+
 @end
